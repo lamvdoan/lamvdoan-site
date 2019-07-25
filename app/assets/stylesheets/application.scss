@@ -111,27 +111,26 @@ body {
   margin-bottom: 3.6rem
 }
 
+
 /*
  * Custom
  */
-
-.resume {
-  margin-top: 2.5rem;
-  margin-right: auto;
-  margin-left: auto;
-  width: 60rem; 
-  height: 70rem;
+.footer-quote {
+  font-weight: bold;
 }
 
+.footer-author {
+  font-style: italic;
+}
+
+
+/*
+ * Custom Home page
+ */
 .home-summary {
   margin: 1rem 15rem 2rem 15rem;
   width: auto;
   height: auto;
-}
-
-.content-section {
-  margin-top: 4.8rem;
-  margin-bottom: 2.4rem;
 }
 
 #background-video {
@@ -148,23 +147,20 @@ body {
   background-size: cover;
 }
 
-.footer-quote {
-  font-weight: bold;
-}
 
-.footer-author {
-  font-style: italic;
-}
-
+/*
+ * Custom About page
+ */
 div.paragraph {
   margin-top: 1.6rem;
   margin-bottom: 1.6rem;
   line-height: 1.9rem;
 }
 
-/*
- * Custom Sidebar
- */
+.content-section {
+  margin-top: 4.8rem;
+  margin-bottom: 2.4rem;
+}
 
 .dark-container {
   margin-top: 4rem;
@@ -188,4 +184,14 @@ h5.heading {
 
 .hl {
   border: 1px solid #555;
+}
+
+
+/*
+ * Custom Resume page
+ */
+.resume {
+  margin: 2.5rem auto 2.5rem auto;
+  width: 60rem; 
+  height: 70rem;
 }
