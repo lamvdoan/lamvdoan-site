@@ -125,8 +125,6 @@ body {
 
 .home-summary {
   margin: 1rem 15rem 2rem 15rem;
-  // margin-left: 15rem;
-  // margin-right: 15rem;
   width: auto;
   height: auto;
 }
@@ -164,13 +162,30 @@ div.paragraph {
   line-height: 1.9rem;
 }
 
+/*
+ * Custom Sidebar
+ */
+
 .dark-container {
   margin-top: 4rem;
-  padding: 1.6rem 1rem 0.4rem 1.8rem;
+  padding: 1.6rem 1rem 0.1rem 1.8rem;
   background-color: #444;
+}
+
+h5.heading {
+  margin-top: 1.4rem;
+  font-weight: bold;
+}
+
+.sidebar-section {
+  margin: 0.2rem 0rem 2.8rem 0rem;
 }
 
 .social-links {
   margin-top: 1rem;
   font-size: 2.6rem;
+}
+
+.hl {
+  border: 1px solid #555;
 }
