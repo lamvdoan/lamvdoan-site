@@ -1,13 +1,11 @@
 <main role="main" class="container">
   <div class="row">
-    <div class="col-md-8 blog-main">
-
-      <%= render @blogs %>
-      
+    <div class="col-md-8 main">
       <nav class="blog-pagination">
-        <!-- TODO: Need to add navigation -->
+        <%= paginate @blogs %>
       </nav>
 
+      <%= render @blogs %>
     </div>
 
   <%= render "shared/blog_sidebar" %>
