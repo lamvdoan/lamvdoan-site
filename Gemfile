@@ -28,7 +28,7 @@ group :development do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'petergate', '~> 1.6', '>= 1.6.3'
+# gem 'petergate', '~> 1.6', '>= 1.6.3'
 gem 'devcamp_view_tool', '~> 0.1.0'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
