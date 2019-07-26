@@ -6,6 +6,6 @@ class PagesController < ApplicationController
   end
 
   def resume
-    @url = "https://drive.google.com/file/d/1MUklKKfn4W21DZ1BDQjorQC5R5AbELso/preview"
+    @url = "https://drive.google.com/file/d/1tPI3EfIm4UvhBcKIwBHJQ1LG2JokokI7/preview"
   end
 end
