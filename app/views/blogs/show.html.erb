@@ -1,19 +1,26 @@
-<p id="notice"><%= notice %></p>
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-md-9 main">
+      <p id="notice"><%= notice %></p>
+      <%= link_to 'Edit', edit_blog_path(@blog) %> | <%= link_to 'Back', blogs_path %>
 
-<p>
-  <strong>Title:</strong>
-  <%= @blog.title %>
-</p>
+      <p>
+        <%= @blog.title %>
+      </p>
 
-<p>
-  <strong>Body:</strong>
-  <%= @blog.body %>
-</p>
+      <p>
+        <strong>Body:</strong>
+        <%= @blog.body %>
+      </p>
 
-<p>
-  <strong>Topic:</strong>
-  <%= @blog.topic_id %>
-</p>
+      <p>
+        <strong>Topic:</strong>
+        <%= @blog.topic_id %>
+      </p>
+    </div>
 
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-<%= link_to 'Back', blogs_path %>
+  <%= render "shared/blog_sidebar" %>
+  </div>
+</main>
+
+
