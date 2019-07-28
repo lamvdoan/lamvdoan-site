@@ -1,12 +1,12 @@
 <header class="masthead mb-auto">
-  <nav class="nav nav-masthead justify-content-center">
-    <a class="nav-link" href="home">Home</a>
-    <a class="nav-link" href="about">About</a>
-    <a class="nav-link" href="resume">Resume</a>
-    <a class="nav-link" href="blogs">Blogs</a>
-  </nav>
-  
   <div class="inner">
     <h3 class="masthead-brand">Lam Doan</h3>
   </div>
+
+  <nav class="nav nav-masthead justify-content-center">
+    <%= link_to 'Home', home_path, class: "nav-link" %>
+    <%= link_to 'About', about_path, class: "nav-link" %>
+    <%= link_to 'Resume', resume_path, class: "nav-link" %>
+    <%= link_to 'Blogs', blogs_path, class: "nav-link" %>
+  </nav>
 </header>
