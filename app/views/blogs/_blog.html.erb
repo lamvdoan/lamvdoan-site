@@ -4,6 +4,10 @@
   Last updated <%= distance_of_time_in_words(blog.updated_at, Time.now) %>
 </p>
 
+<p class="blog-description">
+  <%= markdown(blog.description) %>
+</p>
+
 <div class="blog-admin">
   <%= link_to 'Edit', edit_blog_path(blog) %>| 
   <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
