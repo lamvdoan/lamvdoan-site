@@ -82,15 +82,24 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2rem;
   font-weight: 400;
 }
+
 .blog-description {
   font-size: 1.1rem;
   color: #999;
+}
+
+.blog-body {
+  font-size: 1.1rem;
 }
 
 @media (min-width: 40em) {
   .blog-title {
     font-size: 3.5rem;
   }
+}
+
+.blog-admin {
+  margin-bottom: 2rem;
 }
 
 /* Pagination */
@@ -120,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
  * Footer
  */
 .blog-footer {
-  padding: 2.5rem 0;
+  padding: 1rem 0;
   color: #999;
   text-align: center;
   background-color: #f9f9f9;
@@ -139,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
 .main {
   margin-top: 1rem;
   margin-bottom: 2rem;
-  height: 40rem;
+  height: 100%;
 }
 
 /*

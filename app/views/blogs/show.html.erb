@@ -4,22 +4,17 @@
       <p id="notice"><%= notice %></p>
       <%= link_to 'Edit', edit_blog_path(@blog) %> | <%= link_to 'Back', blogs_path %>
 
-      <p>
+      <p class="blog-title">
         <%= @blog.title %>
       </p>
 
-      <p>
-        <strong>Body:</strong>
+      <p class="blog-body">
         <%= @blog.body %>
       </p>
 
-      <p>
-        <strong>Topic:</strong>
-        <%= @blog.topic_id %>
-      </p>
     </div>
 
-  <%= render "shared/blog_sidebar" %>
+    <%= render "shared/blog_sidebar" %>
   </div>
 </main>
 

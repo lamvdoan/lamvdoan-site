@@ -1,11 +1,10 @@
-<tr>
-  <td><%= blog.title %></td>
-  <br>
-  <td>Last updated <%= distance_of_time_in_words(blog.updated_at, Time.now) %></td>
-  <br>
-  
-  <td><%= link_to 'Show', blog %></td>
-  <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-  <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  <br><br>
-</tr>
+<%= link_to blog.title, blog, class: "blog-title" %>
+
+<p class="blog-description">
+  Last updated <%= distance_of_time_in_words(blog.updated_at, Time.now) %>
+</p>
+
+<div class="blog-admin">
+  <%= link_to 'Edit', edit_blog_path(blog) %>| 
+  <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
