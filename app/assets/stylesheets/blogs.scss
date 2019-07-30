@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
  * Footer
  */
 .blog-footer {
-  padding: 1rem 0;
+  padding: 2.5rem 0;
   color: #999;
   text-align: center;
   background-color: #f9f9f9;
@@ -147,7 +147,8 @@ h1, h2, h3, h4, h5, h6 {
  */
 .main {
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
   height: 100%;
 }
 
@@ -203,4 +204,11 @@ h1, h2, h3, h4, h5, h6 {
   .nav-masthead {
     float: right;
   }
+}
+
+/*
+ * Edit
+ */
+.edit-blog {
+  margin-left: 1rem;
 }

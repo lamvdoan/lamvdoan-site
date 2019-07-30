@@ -14,14 +14,22 @@
   <body>
     <%= render "shared/blog_nav_bar" %>
     
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-      <div class="container">
-        <%= render "shared/blog_header" %>
-      </div>
+    <div class="container">
+      <%= render "shared/blog_header" %>
 
-      <%= yield %>
-      
-      <%= render "shared/blog_footer" %>
+      <main role="main">
+        <div class="row">
+          <div class="col-md-9 main">
+            <%= yield %>
+          </div>
+
+          <aside class="col-md-3 blog-sidebar">
+            <%= render "shared/blog_sidebar" %>
+          </aside>
+        </div>
+      </main>
     </div>
+
+    <%= render "shared/blog_footer" %>
   </body>
 </html>
