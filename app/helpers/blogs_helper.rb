@@ -20,4 +20,10 @@ module BlogsHelper
       markdown.render(text).html_safe
     end
   end
+
+  def standard_date_format date
+    if !date.nil?
+      date.strftime("%B %d, %Y")
+    end
+  end
 end

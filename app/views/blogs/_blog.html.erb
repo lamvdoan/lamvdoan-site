@@ -1,7 +1,7 @@
 <%= link_to blog.title, blog, class: "blog-title" %>
 
 <p class="blog-description">
-  Last updated <%= distance_of_time_in_words(blog.updated_at, Time.now) %>
+  <%= standard_date_format(blog.updated_at) %>
 </p>
 
 <p class="blog-description">
@@ -9,6 +9,6 @@
 </p>
 
 <div class="blog-admin">
-  <%= link_to 'Edit', edit_blog_path(blog) %>| 
-  <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <%= link_to 'Edit', edit_blog_path(blog) %> | 
+  <%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
 </div>
