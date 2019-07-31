@@ -1,6 +1,7 @@
 class BlogsController < ApplicationController
   layout "blog"
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
+  before_action :set_topics_on_sidebar, only: [:show, :index]
 
   # GET /blogs
   def index
@@ -54,5 +55,9 @@ class BlogsController < ApplicationController
 
     def blog_params
       params.require(:blog).permit(:title, :body, :topic_id, :description)
+    end
+
+    def set_topics_on_sidebar
+      @topics_on_sidebar = Topic.has_blogs
     end
 end
