@@ -1,7 +1,8 @@
 <div class="p-4">
   <h4 class="font-italic">Topics</h4>
-  
-  <% @topics_on_sidebar.each do |topic| %>
-    <%= link_to topic.title, topic_path(topic), class: "nav-link" %>
+  <% unless @topics_on_sidebar.blank? %>
+    <% @topics_on_sidebar.each do |topic| %>
+      <%= link_to topic.title, topic_path(topic), class: "nav-link" %>
+    <% end %>
   <% end %>
 </div>

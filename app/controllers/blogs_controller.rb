@@ -1,7 +1,8 @@
 class BlogsController < ApplicationController
   layout "blog"
+
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
-  before_action :set_topics_on_sidebar, only: [:show, :index]
+  before_action :set_topics_on_sidebar, except: [:update, :create, :destroy]
 
   # GET /blogs
   def index
@@ -25,10 +26,12 @@ class BlogsController < ApplicationController
   def create
     @blog = Blog.new(blog_params)
 
-    if @blog.save
-      redirect_to @blog, notice: 'Blog was successfully created.'
-    else
-      render :new
+    respond_to do |format|
+      if @blog.save
+        format.html { redirect_to @blog, notice: 'Blog was successfully created.' }
+      else
+        render :new
+      end
     end
   end
 
