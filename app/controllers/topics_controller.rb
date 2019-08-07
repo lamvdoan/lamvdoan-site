@@ -4,7 +4,7 @@ class TopicsController < ApplicationController
   before_action :set_topics_with_blogs, only: [:show]
 
   def show
-    @blogs = Topic.find(params[:id]).blogs
+    @blogs = Topic.friendly.find(params[:id]).blogs
   end
 
   private
