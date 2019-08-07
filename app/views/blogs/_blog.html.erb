@@ -1,0 +1,14 @@
+<%= link_to blog.title, blog, class: "blog-title" %>
+
+<p class="blog-description">
+  <%= standard_date_format(blog.updated_at) %>
+</p>
+
+<p class="blog-description">
+  <%= markdown(blog.description) %>
+</p>
+
+<div class="blog-admin">
+  <%= link_to 'Edit', edit_blog_path(blog) %> | 
+  <%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
