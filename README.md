@@ -51,23 +51,29 @@ rails db:migrate
 
 ## Heroku Setup
 1. Authenticate into Heroku
-```heroku login
+```
+heroku login
 ```
 2. Create a unique app name on Heroku
-```heroku create <unique app name>
+```
+heroku create <unique app name>
 ```
 3. Push the latest to Heroku Master branch
-```git push heroku master
+```
+git push heroku master
 ```
 4. Add each config settings into heroku
 * Also add secret_base_key: heroku config:set SECRET_KEY_BASE=<secret_base_key from devise.rb>
-```heroku config:set <Attribute in .env>=<key>
+```
+heroku config:set <Attribute in .env>=<key>
 ```
 5. Run the migration file
-```heroku run rake db:migrate
+```
+heroku run rake db:migrate
 ```
 6. Log into the Rails Console
-```heroku run rails c
+```
+heroku run rails c
 ```
 7. Create Topics manually
 ```rails
