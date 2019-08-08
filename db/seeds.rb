@@ -25,3 +25,11 @@ Blog.create!(
   )
 
 puts "Logs: 1 Blog created"
+
+User.create!(
+  email: "lamvdoan@gmail.com",
+  password: "abcd1234",
+  roles: "admin"
+)
+
+puts "Logs: Admin created"
