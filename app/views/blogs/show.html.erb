@@ -1,4 +1,8 @@
-<%= link_to 'Edit', edit_blog_path(@blog) %> | <%= link_to 'Back to Blog', blogs_path %>
+<%= link_to 'Back to Blog', blogs_path %>
+<% if user_signed_in? %>
+  | <%= link_to 'Edit', edit_blog_path(@blog) %>
+<% end %>
+
 <p id="notice"><%= notice %></p>
 
 <p class="blog-title">
