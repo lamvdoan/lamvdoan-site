@@ -4,6 +4,8 @@ class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
   before_action :set_topics_on_sidebar, except: [:update, :create, :destroy]
 
+  access all: [:show, :index], admin: :all
+
   # GET /blogs
   def index
     @blogs = Blog.order(:title).page(params[:page])
