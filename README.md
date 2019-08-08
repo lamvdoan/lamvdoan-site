@@ -10,60 +10,72 @@ http://lamvdoan.com
 
 
 ## Environment Set Up
-1. Install Ruby: 
+1. Install Ruby
 ```
 xcode-select --install
 ```
 2. Install RVM and use 2.6.3: https://rvm.io/
-3. Install and start Postgres: 
+3. Install and start Postgres
 ```
 brew install postgresql && pg_ctl -D /usr/local/var/postgres start
 ```
-4. Get latest gem: 
+4. Get latest gem
 ```
 gem update --system
 ```
-5. Use global for RVM: 
+5. Use global for RVM
 ```
 rvm gemset use global
 ```
-6. Install bundler: 
+6. Install bundler
 ```
 gem install bundler
 ```
-7. Install nokogiri: 
+7. Install nokogiri
 ```
 gem install nokogiri
 ```
-8. Install rails: 
+8. Install rails
 ```
 gem install rails
 ```
-9. Install all your gems within Gemfile: 
+9. Install all your gems within Gemfile
 ```
 bundle install
 ```
-10. Run DB migration: 
+10. Run DB migration
 ```
 rails db:migrate
 ```
 
 
 ## Heroku Setup
-1. heroku login
-2. heroku create <unique app name>
-3. git push heroku master
-4. heroku config:set <Attribute in .env>=<key>
+1. Authenticate into Heroku
+```heroku login
+```
+2. Create a unique app name on Heroku
+```heroku create <unique app name>
+```
+3. Push the latest to Heroku Master branch
+```git push heroku master
+```
+4. Add each config settings into heroku
 * Also add secret_base_key: heroku config:set SECRET_KEY_BASE=<secret_base_key from devise.rb>
-5. heroku run rake db:migrate
-6. heroku run rails c
-7. Create Topic
+```heroku config:set <Attribute in .env>=<key>
+```
+5. Run the migration file
+```heroku run rake db:migrate
+```
+6. Log into the Rails Console
+```heroku run rails c
+```
+7. Create Topics manually
 ```rails
 Topic.create!(title: "Travelling")
 ```
 
 ## Setting up custom domain using Google Domains
-1. In the command line of heroku: 
+1. In the command line for heroku: 
 ```
 heroku domains:add www.yourcustomdomain.com
 ```
