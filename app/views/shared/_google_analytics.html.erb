@@ -1,10 +1,7 @@
-<% if Rails.env.production? %>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145386653-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
-    gtag('config', <%= ENV.fetch("GOOGLE_TRACKING_ID") %>);
+    gtag('config', '<%= ENV.fetch("GOOGLE_TRACKING_ID") %>');
   </script>
-<% end %>

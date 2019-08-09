@@ -1,7 +1,9 @@
-document.addEventListener('turbolinks:load', function(event) {
-  if (typeof gtag === 'function') {
-    gtag('config', ENV.fetch("GOOGLE_TRACKING_ID"), {
-      'page_location': event.data.url
-    })
-  }
-})
+<% if Rails.env.production? %>
+  document.addEventListener('turbolinks:load', function(event) {
+    if (typeof gtag === 'function') {
+      gtag('config', '<%= ENV.fetch("GOOGLE_TRACKING_ID") %>', {
+        'page_location': event.data.url
+      })
+    }
+  })
+<% end %>
