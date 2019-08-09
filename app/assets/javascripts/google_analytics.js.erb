@@ -1,6 +1,6 @@
 document.addEventListener('turbolinks:load', function(event) {
   if (typeof gtag === 'function') {
-    gtag('config', '<%= ENV.fetch("GOOGLE-TRACKING_ID") %>', {
+    gtag('config', '<%= ENV.fetch("GOOGLE_TRACKING_ID") %>', {
       'page_location': event.data.url
     })
   }
