@@ -7,7 +7,7 @@ module BlogsHelper
 
   def markdown text
     if !text.nil?
-      coderayified = CodeRayify.new(filter_html: true, hard_wrap: true)
+      coderayified = CodeRayify.new(with_toc_data: true, hard_wrap: true)
 
       settings = {
         fenced_code_blocks: true,
