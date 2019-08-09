@@ -12,6 +12,10 @@
   <% end %>
 
   <div class="form-group">
+    <%= form.submit "Update", class: "btn btn-primary" %>
+  </div>
+
+  <div class="form-group">
     <%= form.text_field :title, class: "form-control", placeholder: "Title" %>
   </div>
 
@@ -23,8 +27,8 @@
     <%= form.text_area :description, rows: 5, class: "form-control", placeholder: "Brief description" %>
   </div>
 
-  <div class="form-group">
-    <%= form.text_area :body, rows: 15, class: "form-control", placeholder: "Body" %>
+  <div class="form-group"  id="my_anchor">
+    <%= form.text_area :body, rows: 29, class: "form-control", placeholder: "Body" %>
   </div>
 
   <div class="form-group">
