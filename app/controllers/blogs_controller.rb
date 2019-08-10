@@ -1,4 +1,6 @@
 class BlogsController < ApplicationController
+  include TitleConcern
+
   layout "blog"
 
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
@@ -9,10 +11,12 @@ class BlogsController < ApplicationController
   # GET /blogs
   def index
     @blogs = Blog.order(:title).page(params[:page])
+    @title = title_delimiter("Blog")
   end
 
   # GET /blogs/1
   def show
+    @title = title_delimiter(@blog.title)
   end
 
   # GET /blogs/new

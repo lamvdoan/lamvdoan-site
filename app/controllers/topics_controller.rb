@@ -1,10 +1,13 @@
 class TopicsController < ApplicationController
+  include TitleConcern
   layout "blog"
 
   before_action :set_topics_with_blogs, only: [:show]
 
   def show
-    @blogs = Topic.friendly.find(params[:id]).blogs
+    @topic = Topic.friendly.find(params[:id])
+    @blogs = @topic.blogs
+    @title = title_delimiter(@topic.title)
   end
 
   private
