@@ -6,7 +6,7 @@ class TopicsController < ApplicationController
 
   def show
     @topic = Topic.friendly.find(params[:id])
-    @blogs = @topic.blogs
+    @blogs = @topic.blogs.page(params[:page])
     @title = title_delimiter(@topic.title)
   end
 
