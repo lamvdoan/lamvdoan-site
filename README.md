@@ -4,8 +4,9 @@
 * Postgres: v11.3
 
 ## lamvdoan-site
-My personal profile site uses the technologies: Ruby, Rails, CSS/HTML, Postgres, Herokuapp, Google Domains
+This project site use the technologies: Ruby on Rails, CSS/HTML, Postgres, Herokuapp, Google Domains, Google Analytics.
 
+#### Profile Website
 http://lamvdoan.com
 
 
@@ -62,7 +63,7 @@ heroku create <unique app name>
 ```
 git push heroku master
 ```
-4. Add each config settings into heroku
+4. Add each config settings into heroku (using the .env file)
 * Also add secret_base_key: heroku config:set SECRET_KEY_BASE=<secret_base_key from devise.rb>
 ```
 heroku config:set <Attribute in .env>=<key>
@@ -79,6 +80,7 @@ heroku run rails c
 ```rails
 Topic.create!(title: "Travelling")
 ```
+
 
 ## Setting up custom domain using Google Domains
 1. In the command line for heroku: 
@@ -105,3 +107,12 @@ heroku domains
 * IPv4 address = Heroku DNS target that you copied above
 * Click Add
 8. Load your custom domain on a browser, we are done!
+
+
+## Google Analytics
+1. Sign up for [Google Analytics](https://analytics.google.com/analytics/web/)
+2. Copy the Google Analytics (GA) key
+3. Add the GA key in the .env file:
+```
+GOOGLE_TRACKING_ID=<key>
+```

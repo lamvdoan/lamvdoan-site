@@ -1,7 +1,20 @@
 @import "bootstrap";
 
+@font-face {
+   font-family: 'Open Sans';
+   src: font-url("OpenSans-Regular.ttf");
+}
+
 body {
   background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Arial";
+}
+
+p {
+  font-family: "Open Sans";
 }
 
 .blog-header {
@@ -19,8 +32,8 @@ body {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+.blog-header-title {
+  font-size: 4rem;
 }
 
 .display-4 {

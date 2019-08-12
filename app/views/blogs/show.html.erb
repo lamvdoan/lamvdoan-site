@@ -5,10 +5,12 @@
 
 <p id="notice"><%= notice %></p>
 
-<p class="blog-title">
+<span class="blog-title">
   <%= @blog.title %>
-</p>
+</span>
 
 <p class="blog-body">
   <%= markdown(@blog.body) %>
 </p>
+
+<%= link_to "Back to Top", "#" %> | <%= link_to 'Back to Blog', blogs_path %>

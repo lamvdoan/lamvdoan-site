@@ -1,18 +1,23 @@
 class BlogsController < ApplicationController
+  include TitleConcern
+
   layout "blog"
 
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
   before_action :set_topics_on_sidebar, except: [:update, :create, :destroy]
+  before_action :set_title_on_header, except: [:update, :create, :destroy]
 
   access all: [:show, :index], admin: :all
 
   # GET /blogs
   def index
     @blogs = Blog.order(:title).page(params[:page])
+    @title = title_delimiter("Blog")
   end
 
   # GET /blogs/1
   def show
+    @title = title_delimiter(@blog.title)
   end
 
   # GET /blogs/new
@@ -64,5 +69,9 @@ class BlogsController < ApplicationController
 
     def set_topics_on_sidebar
       @topics_on_sidebar = Topic.has_blogs
+    end
+
+    def set_title_on_header
+      @title_on_header = "Blog"
     end
 end
