@@ -1,3 +1,5 @@
+require 'dotenv/load'
+
 class PagesController < ApplicationController
   include TitleConcern
 
@@ -9,7 +11,7 @@ class PagesController < ApplicationController
   end
 
   def resume
-    @url = "https://drive.google.com/file/d/1tPI3EfIm4UvhBcKIwBHJQ1LG2JokokI7/preview"
+    @url = ENV.fetch("RESUME_URL")
     @title = title_delimiter("Resume")
   end
 end

@@ -116,3 +116,7 @@ heroku domains
 ```
 GOOGLE_TRACKING_ID=<key>
 ```
+
+## Keys to add in .env
+* GOOGLE_TRACKING_ID
+* RESUME_URL
