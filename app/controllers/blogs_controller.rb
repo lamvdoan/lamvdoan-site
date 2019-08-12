@@ -5,6 +5,7 @@ class BlogsController < ApplicationController
 
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
   before_action :set_topics_on_sidebar, except: [:update, :create, :destroy]
+  before_action :set_title_on_header, except: [:update, :create, :destroy]
 
   access all: [:show, :index], admin: :all
 
@@ -68,5 +69,9 @@ class BlogsController < ApplicationController
 
     def set_topics_on_sidebar
       @topics_on_sidebar = Topic.has_blogs
+    end
+
+    def set_title_on_header
+      @title_on_header = "Blog"
     end
 end
