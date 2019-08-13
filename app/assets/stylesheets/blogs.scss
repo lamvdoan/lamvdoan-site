@@ -377,3 +377,18 @@ p {
     margin-bottom: 2rem;
   }
 }
+
+
+/*
+ * Mobile Display: iPad
+ */
+@media only screen 
+  and (device-width: 768px)
+  and (device-height: 1024px) {
+
+  .main {
+    img {
+      max-width: 512px;
+    }
+  }
+}
