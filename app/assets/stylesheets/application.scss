@@ -45,6 +45,10 @@ body {
   max-width: 78em;
 }
 
+.center {
+  text-align: center;
+}
+
 
 /*
  * Header
@@ -217,6 +221,8 @@ h5.heading {
   }
 
   .cover-container {
+    margin-top: 0;
+    padding-top: 0;
     min-width: 10rem;
     min-width: 20rem;
   }
@@ -237,4 +243,28 @@ h5.heading {
     height: 70%;
   }
 
+  .dark-container {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .sidebar-section {
+    margin-bottom: 0;
+  }
+
+  .about-image-mobile {
+    margin-bottom: 1rem;
+  }
+
+  .mobile-content {
+    margin-left: 1rem;
+  }
+
+  .inner {
+    margin-bottom: 1rem;
+  }  
+
+  .p-3 {
+    padding-top: .5rem !important;
+  }
 }
