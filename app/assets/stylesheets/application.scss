@@ -232,7 +232,6 @@ h5.heading {
   }
 
   .mastfoot {
-    margin-bottom: .5rem;
     margin-top: 4rem;
   }
 
@@ -256,15 +255,29 @@ h5.heading {
     margin-bottom: 1rem;
   }
 
-  .mobile-content {
-    margin-left: 1rem;
-  }
-
   .inner {
     margin-bottom: 1rem;
   }  
 
   .p-3 {
     padding-top: .5rem !important;
+  }
+
+  .mastfoot {
+    padding-bottom: .5rem
+  }
+}
+
+
+/*
+ * Mobile Display: iPhone 6/7/8
+ */
+@media only screen 
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .masthead {
+    padding-bottom: 2rem;
   }
 }
