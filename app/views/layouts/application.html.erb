@@ -18,8 +18,10 @@
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
       <%= render "shared/nav_bar" %>
 
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+      <% if notice || alert %>
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+      <% end %>
 
       <%= yield %>
       

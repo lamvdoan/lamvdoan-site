@@ -17,6 +17,10 @@ p {
   font-family: "Open Sans";
 }
 
+
+/*
+ * Blog header
+ */
 .blog-header {
   line-height: 1;
   border-bottom: 1px solid #e5e5e5;
@@ -33,16 +37,8 @@ p {
 }
 
 .blog-header-title {
+  text-align: center;
   font-size: 4rem;
-}
-
-.display-4 {
-  font-size: 2.5rem;
-}
-@media (min-width: 768px) {
-  .display-4 {
-    font-size: 3rem;
-  }
 }
 
 .nav-scroller {
@@ -81,17 +77,17 @@ p {
   flex: 0 0 auto;
 }
 
-.h-250 { height: 250px; }
-@media (min-width: 768px) {
-  .h-md-250 { height: 250px; }
+.h-250 { 
+  height: 250px; 
 }
+
 
 /*
  * Blog name and description
  */
 .blog-title {
   margin-bottom: 0;
-  font-size: 2rem;
+  font-size: 3.5rem;  
   font-weight: 400;
 }
 
@@ -104,15 +100,10 @@ p {
   font-size: 1.1rem;
 }
 
-@media (min-width: 40em) {
-  .blog-title {
-    font-size: 3.5rem;
-  }
-}
-
 .blog-admin {
   margin-bottom: 2rem;
 }
+
 
 /* Pagination */
 .blog-pagination {
@@ -121,6 +112,7 @@ p {
 .blog-pagination > .btn {
   border-radius: 2rem;
 }
+
 
 /*
  * Blog posts
@@ -137,6 +129,7 @@ p {
   color: #999;
 }
 
+
 /*
  * Footer
  */
@@ -152,12 +145,26 @@ p {
   margin-bottom: 0;
 }
 
+
 /*
  * Main
  */
 .main {
   margin-bottom: 3rem;
 }
+
+
+/*
+ * Sidebar
+ */
+.blog-sidebar {
+  margin-bottom: 3rem;
+}
+
+.p-4-custom {
+  padding: 1.5rem;
+}
+
 
 /*
  * Nav Bar
@@ -184,7 +191,7 @@ p {
   border-bottom: .25rem solid transparent;
 }
 
-.masthead-brand .nav-link{
+.masthead-brand .nav-link {
   font-size: 1.75rem;
   color: black;
   font-weight: 500;
@@ -204,18 +211,57 @@ p {
   border-bottom-color: #fff;
 }
 
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
+.masthead-brand {
+  float: left;
 }
+
+.nav-masthead {
+  float: right;
+}
+
 
 /*
  * Edit
  */
 .edit-blog {
   margin-left: 1rem;
+}
+
+
+/*
+ * Mobile Display
+ */
+@media (max-width: 45rem) {
+  .main {
+    img {
+      max-width: 385px;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .p-4-custom {
+    padding: 0;
+  }
+
+  .nav-attribute {
+    padding: 1rem 0 1rem 0;
+  }
+
+  .masthead-brand {
+    width: 100%;
+    text-align: center;
+  }
+
+  .justify-content-center { 
+    width: 100%;
+  }
+
+  .blog-header-title {
+    font-size: 2rem;
+  }
+
+  .blog-title {
+    font-size: 2rem;
+  }
 }

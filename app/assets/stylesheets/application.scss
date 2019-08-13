@@ -45,6 +45,10 @@ body {
   max-width: 78em;
 }
 
+.center {
+  text-align: center;
+}
+
 
 /*
  * Header
@@ -108,7 +112,7 @@ body {
 .mastfoot {
   color: rgba(255, 255, 255, .5);
   text-align: center;
-  margin-bottom: 3.6rem
+  margin-bottom: 1.8rem
 }
 
 
@@ -195,4 +199,72 @@ h5.heading {
   margin: 2.5rem auto 2.5rem auto;
   width: 60rem; 
   height: 70rem;
+}
+
+
+/*
+ * Mobile Display
+ */
+@media (max-width: 45rem) {
+  .nav-attribute {
+    padding: 1rem 0 1rem 0;
+  }
+
+  .masthead {
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .masthead-brand {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cover-container {
+    margin-top: 0;
+    padding-top: 0;
+    min-width: 10rem;
+    min-width: 20rem;
+  }
+
+  .home-summary {
+    margin: 0;
+  }
+
+  .mastfoot {
+    margin-bottom: .5rem;
+    margin-top: 4rem;
+  }
+
+  .resume {
+    margin-top: 1rem;
+    padding: 0;
+    width: auto;
+    height: 60%;
+  }
+
+  .dark-container {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .sidebar-section {
+    margin-bottom: 0;
+  }
+
+  .about-image-mobile {
+    margin-bottom: 1rem;
+  }
+
+  .mobile-content {
+    margin-left: 1rem;
+  }
+
+  .inner {
+    margin-bottom: 1rem;
+  }  
+
+  .p-3 {
+    padding-top: .5rem !important;
+  }
 }
