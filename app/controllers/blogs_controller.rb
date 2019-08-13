@@ -5,7 +5,7 @@ class BlogsController < ApplicationController
 
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
   before_action :set_topics_on_sidebar, except: [:update, :create, :destroy]
-  before_action :set_title_on_header, except: [:update, :create, :destroy]
+  before_action :set_title_on_header, except: [:update, :create, :destroy, :show]
 
   access all: [:show, :index], admin: :all
 
@@ -18,6 +18,7 @@ class BlogsController < ApplicationController
   # GET /blogs/1
   def show
     @title = title_delimiter(@blog.title)
+    @title_on_header = @blog.title
   end
 
   # GET /blogs/new
