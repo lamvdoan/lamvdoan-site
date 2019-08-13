@@ -230,12 +230,11 @@ p {
 
 
 /*
- * Mobile Display
+ * Mobile Common
  */
-@media (max-width: 45rem) {
+@media (max-device-width: 812px) {
   .main {
     img {
-      max-width: 385px;
       width: auto;
       height: auto;
     }
@@ -265,5 +264,116 @@ p {
 
   .blog-title {
     font-size: 2rem;
+  }
+}
+
+
+/*
+ * Mobile Display: iPhone 6/7/8
+ */
+@media only screen 
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .main {
+    img {
+      max-width: 346px;
+    }
+  }
+}
+
+
+/*
+ * Mobile Display: iPhoneX
+ */
+@media only screen 
+  and (device-width: 375px)
+  and (device-height: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+ 
+  .main {
+    img {
+      max-width: 345px;
+    }
+  }
+
+  .blog-footer {
+    margin-bottom: 7rem;
+  }
+}
+
+
+
+/*
+ * Mobile Display: iPhone Plus;
+ */
+@media only screen 
+  and (device-width: 414px)
+  and (device-height: 736px) {
+  
+  .main {
+    img {
+      max-width: 385px;
+    }
+  }
+
+  .blog-footer {
+    margin-bottom: 2rem;
+  }
+}
+
+/*
+ * Mobile Display: Pixel
+ */
+@media only screen 
+  and (device-width: 411px)
+  and (device-height: 731px) {
+  
+  .main {
+    img {
+      max-width: 382px;
+    }
+  }
+
+  .blog-footer {
+    margin-bottom: 2rem;
+  }
+}
+
+
+/*
+ * Mobile Display: Pixel XL
+ */
+@media only screen 
+  and (device-width: 411px)
+  and (device-height: 823px) {
+  
+  .main {
+    img {
+      max-width: 382px;
+    }
+  }
+
+  .blog-footer {
+    margin-bottom: 8rem;
+  }
+}
+
+
+/*
+ * Mobile Display: Sumsung Galaxy S8+ and Note 8+
+ */
+@media only screen 
+  and (device-width: 360px)
+  and (device-height: 740px) {
+  
+  .main {
+    img {
+      max-width: 332px;
+    }
+  }
+
+  .blog-footer {
+    margin-bottom: 2rem;
   }
 }
