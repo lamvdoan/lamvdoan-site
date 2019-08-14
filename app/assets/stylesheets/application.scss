@@ -6,11 +6,10 @@
  */
 
 /* Links */
-a,
-a:focus,
-a:hover {
+li > a {
   color: #fff;
 }
+
 
 /* Custom default button */
 .btn-secondary,
