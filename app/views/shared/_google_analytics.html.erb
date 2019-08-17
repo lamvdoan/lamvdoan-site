@@ -1,7 +1,16 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145386653-1"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '<%= ENV.fetch("GOOGLE_TRACKING_ID") %>');
+    var environment = <%= Rails.env.production? %>;
+    
+    if (environment == false) {
+      console.log("_google_analytics.html.erb: DEV environment");
+    } else if (environment == true) {
+      console.log("_google_analytics.html.erb: PROD environment");
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '<%= ENV.fetch("GOOGLE_TRACKING_ID") %>');
+    } else {
+      console.log("_google_analytics.html.erb: UNKNOWN environment");
+    }
   </script>
