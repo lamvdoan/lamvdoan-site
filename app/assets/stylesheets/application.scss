@@ -194,12 +194,13 @@ h5.heading {
 /*
  * Custom Resume page
  */
-.resume {
-  margin: 2.5rem auto 2.5rem auto;
-  width: 60rem; 
-  height: 70rem;
+ @media (min-width: 45rem) {
+  .resume {
+    margin: 5rem auto 5rem auto;
+    width: 60rem; 
+    height: 70rem;
+  }
 }
-
 
 /*
  * Mobile Display
@@ -222,7 +223,6 @@ h5.heading {
   .cover-container {
     margin-top: 0;
     padding-top: 0;
-    min-width: 10rem;
     min-width: 20rem;
   }
 
@@ -278,5 +278,18 @@ h5.heading {
 
   .masthead {
     padding-bottom: 2rem;
+  }
+
+  .resume {
+    height: 25rem;
+  }
+}
+
+@media only screen 
+  and (device-width: 360px)
+  and (device-height: 740px) {
+ 
+  .resume {
+    height: 25rem;
   }
 }
