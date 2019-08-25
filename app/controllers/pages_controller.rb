@@ -3,15 +3,24 @@ require 'dotenv/load'
 class PagesController < ApplicationController
   include TitleConcern
 
+  before_action :set_prefix
+  
   def home
+    @title = "Lam Doan"
   end
 
   def about
-    @title = title_delimiter("About")
+    @title = @prefix + title_delimiter("About")
   end
 
   def resume
     @url = ENV.fetch("RESUME_URL")
-    @title = title_delimiter("Resume")
+    @title = @prefix + title_delimiter("Resume")
+  end
+
+  private
+
+  def set_prefix
+    @prefix = "LVD"
   end
 end
