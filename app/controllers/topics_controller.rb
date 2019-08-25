@@ -7,7 +7,7 @@ class TopicsController < ApplicationController
   before_action :set_title_on_header, only: [:show]
 
   def show
-    @blogs = @topic.blogs.order("blogs.title").page(params[:page])
+    @blogs = @topic.blogs.most_recent.page(params[:page])
     @title = title_delimiter(@topic.title)
   end
 
