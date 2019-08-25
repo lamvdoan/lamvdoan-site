@@ -11,7 +11,7 @@ class BlogsController < ApplicationController
 
   # GET /blogs
   def index
-    @blogs = Blog.order(:title).page(params[:page])
+    @blogs = Blog.most_recent.page(params[:page])
     @title = title_delimiter("Blog")
   end
 
