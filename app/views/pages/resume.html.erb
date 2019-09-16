@@ -1,5 +1,9 @@
 <main role="main" class="inner cover">
   <div class=resume>
-    <embed src="<%= @url %>" height="100%" width="100%"></embed>
+    <div class="btn download-resume-button">
+      <%= link_to "Download Resume", @url_pdf %>
+    </div>
+
+    <iframe src="<%= @url_publish %>" height="100%" width="100%" style="background: #FFFFFF;"></iframe>
   </div>
 </main>

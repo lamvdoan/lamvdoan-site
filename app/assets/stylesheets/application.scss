@@ -194,11 +194,24 @@ h5.heading {
 /*
  * Custom Resume page
  */
+
+ .download-resume-button {
+  text-shadow: none;
+  background-color: #A9A9A9;
+  margin-bottom: 2rem;
+
+  a, a:hover {
+    outline:none;
+    text-decoration:none;
+    color:inherit;
+  }
+}
+
  @media (min-width: 45rem) {
   .resume {
-    margin: 5rem auto 5rem auto;
-    width: 60rem; 
-    height: 70rem;
+    margin: 5rem auto 7rem auto;
+    width: 52.5rem; 
+    height: 75rem;
   }
 }
 
