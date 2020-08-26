@@ -120,3 +120,14 @@ GOOGLE_TRACKING_ID=<key>
 ## Keys to add in .env
 * GOOGLE_TRACKING_ID
 * RESUME_URL
+
+
+## How to deploy changes
+1. Deploy to Github:
+```
+git push origin master
+```
+2. Deploy to Heroku:
+```
+git push heroku master
+```
