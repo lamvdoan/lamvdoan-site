@@ -1,0 +1,241 @@
+@import "bootstrap";
+
+@font-face {
+   font-family: 'Arial';
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #421309;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Arial";
+}
+
+p {
+  font-family: "Open Sans";
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.central {
+  background-color: white;
+  padding-left: 10%;
+  padding-right: 10%; 
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.image {
+  text-align: center;
+}
+
+.info-box {
+  padding: 1.6rem 2rem 1.6rem 2rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.name {
+  font-size: 4rem;
+  text-align: center;
+  margin: 0;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  padding: 0rem 2rem 0rem 2rem;
+  text-align: center;
+}
+
+.text {
+  font-size: 1.25rem;
+  padding: 0rem 1rem 0rem 2rem;
+  text-align: center;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.quote {
+  font-style: italic;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+
+/*
+ * Mobile Common
+ */
+@media (max-device-width: 812px) {
+  .main {
+    img {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .p-4-custom {
+    padding: 0;
+  }
+
+  .nav-attribute {
+    padding: 1rem 0 1rem 0;
+  }
+
+  .masthead-brand {
+    width: 100%;
+    text-align: center;
+  }
+
+  .justify-content-center { 
+    width: 100%;
+  }
+
+  .blog-header-title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .blog-title {
+    font-size: 2rem;
+  }
+}
+
+
+/*
+ * Mobile Display: iPhone 6/7/8
+ */
+@media only screen 
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .main {
+    img {
+      max-width: 346px;
+    }
+  }
+}
+
+
+/*
+ * Mobile Display: iPhoneX
+ */
+@media only screen 
+  and (device-width: 375px)
+  and (device-height: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+ 
+  .main {
+    img {
+      max-width: 345px;
+    }
+  }
+
+  .blog-footer {
+    margin-bottom: 7rem;
+  }
+}
+
+
+/*
+ * Mobile Display: iPhone Plus;
+ */
+@media only screen 
+  and (device-width: 414px)
+  and (device-height: 736px) {
+  
+  .main {
+    img {
+      max-width: 385px;
+    }
+  }
+
+  .blog-footer {
+    margin-bottom: 2rem;
+  }
+}
+
+
+/*
+ * Mobile Display: Pixel
+ */
+@media only screen 
+  and (device-width: 411px)
+  and (device-height: 731px) {
+  
+  .main {
+    img {
+      max-width: 382px;
+    }
+  }
+
+  .blog-footer {
+    margin-bottom: 2rem;
+  }
+}
+
+
+/*
+ * Mobile Display: Pixel XL
+ */
+@media only screen 
+  and (device-width: 411px)
+  and (device-height: 823px) {
+  
+  .main {
+    img {
+      max-width: 382px;
+    }
+  }
+
+  .blog-footer {
+    margin-bottom: 8rem;
+  }
+}
+
+
+/*
+ * Mobile Display: Sumsung Galaxy S8+ and Note 8+
+ */
+@media only screen 
+  and (device-width: 360px)
+  and (device-height: 740px) {
+  
+  .main {
+    img {
+      max-width: 332px;
+    }
+  }
+
+  .blog-footer {
+    margin-bottom: 2rem;
+  }
+}
+
+
+/*
+ * Mobile Display: iPad
+ */
+@media only screen 
+  and (device-width: 768px)
+  and (device-height: 1024px) {
+
+  .main {
+    img {
+      max-width: 512px;
+    }
+  }
+}

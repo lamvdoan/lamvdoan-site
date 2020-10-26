@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    
+    <title>Wedding</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag 'wedding', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= render "shared/google_analytics" %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag asset_path("ring.png") %>
+  </head>
+
+  <div class="container">
+        <%= yield %>
+
+        <iframe src="https://lamvdoan.s3.us-east-2.amazonaws.com/wedding/Ed+Sheeran+-+Perfect.mp3" allow="autoplay" height="0" width="0"></iframe>    
+  </div>
+</html>
