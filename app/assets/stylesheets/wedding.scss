@@ -127,6 +127,12 @@ p {
       max-width: 346px;
     }
   }
+  .image {
+    img {
+      max-width: 276px;
+      max-height: 193px;
+    }
+  }
 }
 
 
@@ -144,8 +150,15 @@ p {
     }
   }
 
-  .blog-footer {
-    margin-bottom: 7rem;
+  .image {
+    img {
+      max-width: 276px;
+      max-height: 193px;
+    }
+  }
+
+  .container {
+    margin-bottom: 100px;
   }
 }
 
@@ -162,6 +175,13 @@ p {
       max-width: 385px;
     }
   }
+
+  .image {
+    img {
+      max-width: 276px;
+      max-height: 193px;
+    }
+  }  
 
   .blog-footer {
     margin-bottom: 2rem;
@@ -182,6 +202,12 @@ p {
     }
   }
 
+  .image {
+    img {
+      max-width: 276px;
+      max-height: 193px;
+    }
+  }
   .blog-footer {
     margin-bottom: 2rem;
   }
@@ -198,6 +224,13 @@ p {
   .main {
     img {
       max-width: 382px;
+    }
+  }
+
+  .image {
+    img {
+      max-width: 276px;
+      max-height: 193px;
     }
   }
 
@@ -220,6 +253,13 @@ p {
     }
   }
 
+  .image {
+    img {
+      max-width: 276px;
+      max-height: 193px;
+    }
+  }
+
   .blog-footer {
     margin-bottom: 2rem;
   }
@@ -236,6 +276,13 @@ p {
   .main {
     img {
       max-width: 512px;
+    }
+  }
+
+  .image {
+    img {
+      max-width: 500px;
+      max-height: 350px;
     }
   }
 }
