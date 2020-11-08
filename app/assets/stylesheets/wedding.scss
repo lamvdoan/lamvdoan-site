@@ -90,28 +90,6 @@ p {
   .p-4-custom {
     padding: 0;
   }
-
-  .nav-attribute {
-    padding: 1rem 0 1rem 0;
-  }
-
-  .masthead-brand {
-    width: 100%;
-    text-align: center;
-  }
-
-  .justify-content-center { 
-    width: 100%;
-  }
-
-  .blog-header-title {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-  }
-
-  .blog-title {
-    font-size: 2rem;
-  }
 }
 
 
@@ -137,6 +115,14 @@ p {
       max-width: 276px;
       max-height: 193px;
     }
+  }
+
+  .info-box {
+    padding: 1.6rem 0rem 1.6rem 1rem;
+  }
+
+  .text {
+    padding: 0rem 0rem 0rem 0rem;
   }
 }
 
@@ -306,5 +292,30 @@ p {
 
   .container {
     margin-bottom: 300px;
+  }
+}
+
+/*
+ * Mobile Display: iPad Pro
+ */
+@media only screen 
+  and (device-width: 1024px)
+  and (device-height: 1366px) {
+
+  .main {
+    img {
+      max-width: 512px;
+    }
+  }
+
+  .image {
+    img {
+      max-width: 552px;
+      max-height: 386px;
+    }
+  }
+
+  .container {
+    margin-bottom: 670px;
   }
 }
