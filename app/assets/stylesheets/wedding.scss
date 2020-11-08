@@ -127,6 +127,11 @@ p {
       max-width: 346px;
     }
   }
+
+  .name {
+    font-size: 3rem;
+  }
+
   .image {
     img {
       max-width: 276px;
@@ -148,6 +153,10 @@ p {
     img {
       max-width: 345px;
     }
+  }
+
+  .name {
+    font-size: 3rem;
   }
 
   .image {
@@ -176,16 +185,17 @@ p {
     }
   }
 
+  .name {
+    font-size: 3rem;
+  }
+
+
   .image {
     img {
       max-width: 276px;
       max-height: 193px;
     }
   }  
-
-  .blog-footer {
-    margin-bottom: 2rem;
-  }
 }
 
 
@@ -202,14 +212,16 @@ p {
     }
   }
 
+  .name {
+    font-size: 3rem;
+  }
+
+
   .image {
     img {
       max-width: 276px;
       max-height: 193px;
     }
-  }
-  .blog-footer {
-    margin-bottom: 2rem;
   }
 }
 
@@ -227,6 +239,11 @@ p {
     }
   }
 
+  .name {
+    font-size: 3rem;
+  }
+
+
   .image {
     img {
       max-width: 276px;
@@ -234,8 +251,8 @@ p {
     }
   }
 
-  .blog-footer {
-    margin-bottom: 8rem;
+  .container {
+    margin-bottom: 100px;
   }
 }
 
@@ -253,15 +270,16 @@ p {
     }
   }
 
+  .name {
+    font-size: 3rem;
+  }
+
+
   .image {
     img {
       max-width: 276px;
       max-height: 193px;
     }
-  }
-
-  .blog-footer {
-    margin-bottom: 2rem;
   }
 }
 
@@ -281,8 +299,12 @@ p {
 
   .image {
     img {
-      max-width: 500px;
-      max-height: 350px;
+      max-width: 552px;
+      max-height: 386px;
     }
+  }
+
+  .container {
+    margin-bottom: 300px;
   }
 }
