@@ -22,13 +22,15 @@
 
       <main role="main">
         <div class="row">
+          <aside class="col-md-3 blog-sidebar">
+            <%= render "shared/blog_sidebar" %>
+          </aside>
+
           <div class="col-md-9 main">
             <%= yield %>
           </div>
 
-          <aside class="col-md-3 blog-sidebar">
-            <%= render "shared/blog_sidebar" %>
-          </aside>
+
         </div>
       </main>
     </div>
