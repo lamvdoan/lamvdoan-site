@@ -13,7 +13,8 @@ module BlogsHelper
         fenced_code_blocks: true,
         no_intra_emphasis: true,
         autolink: true,
-        superscript: true
+        superscript: true,
+        strikethrough: true,
       }
 
       markdown = Redcarpet::Markdown.new(coderayified, settings)
