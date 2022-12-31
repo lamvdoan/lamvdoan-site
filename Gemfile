@@ -37,4 +37,4 @@ gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
 gem 'bootstrap', '~> 4.3.1'
 
-ruby "3.1.0"
+ruby "3.1.3"
