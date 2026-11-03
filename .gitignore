@@ -31,3 +31,6 @@
 
 # Ignore credentials
 .env
+
+# Postgres production data dump
+latest.dump

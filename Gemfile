@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem 'rails', '~> 7.0.4'
+gem 'rails', '~> 7.0.10'
 gem 'nokogiri', '>= 1.13.10'
 gem 'pg', '1.4.1'
 gem 'puma', '~> 4.3.12'
@@ -20,7 +20,7 @@ end
 
 group :development do
   gem 'web-console', '>= 3.3.0'
-  gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'listen', '~> 3.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'pry-rails'
@@ -38,3 +38,8 @@ gem 'coderay', '~> 1.1', '>= 1.1.2'
 gem 'bootstrap', '~> 4.3.1'
 
 ruby "3.4.12"
+
+gem "base64", "~> 0.3.0"
+
+gem "bigdecimal", "~> 4.1"
+gem "mutex_m", "~> 0.3.0"
