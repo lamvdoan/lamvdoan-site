@@ -1,7 +1,7 @@
 # README
-* Ruby: v2.6.3
-* Rails: v5.2.3
-* Postgres: v11.3
+* Ruby: v3.4.12
+* Rails: v8.1.4
+* Postgres: v18.6
 
 ## lamvdoan-site
 This project site use the technologies: Ruby on Rails, CSS/HTML, Postgres, Herokuapp, Google Domains, Google Analytics.
@@ -15,10 +15,10 @@ http://lamvdoan.com
 ```
 xcode-select --install
 ```
-2. Install RVM and use 2.6.3: https://rvm.io/
+2. Install RVM and use 3.4.12: https://rvm.io/
 3. Install and start Postgres
 ```
-brew install postgresql && pg_ctl -D /usr/local/var/postgres start
+brew install postgresql@18 && brew services start postgresql@18
 ```
 4. Get latest gem
 ```
