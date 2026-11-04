@@ -38,7 +38,7 @@ gem 'jquery-ui-rails', '~> 8.0'
 gem 'dotenv-rails', '~> 3.2'
 gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
-gem 'bootstrap', '~> 4.3.1'
+gem 'bootstrap', '~> 5.3.8'
 
 ruby "3.4.12"
 
