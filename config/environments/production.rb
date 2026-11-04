@@ -81,7 +81,7 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Enforce SSL
-  config.force.ssl = true
+  config.force_ssl = true
 
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
