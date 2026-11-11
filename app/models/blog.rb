@@ -7,6 +7,6 @@ class Blog < ApplicationRecord
   paginates_per 5
 
   def self.most_recent
-    order("updated_at DESC")
+    order("created_at DESC")
   end
 end

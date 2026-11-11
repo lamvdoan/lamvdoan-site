@@ -7,6 +7,6 @@ class Topic < ApplicationRecord
   paginates_per 5
 
   def self.has_blogs
-    includes(:blogs).where.not(blogs: { topic_id: nil })
+    includes(:blogs).where.not(blogs: { topic_id: nil }).order("topics.title ASC")
   end
 end
