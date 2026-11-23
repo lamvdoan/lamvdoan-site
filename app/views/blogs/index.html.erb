@@ -1,9 +1,15 @@
-<nav class="blog-pagination">
-  <%= paginate @blogs %>
-</nav>
+<div id="blog-search-results">
+  <% if @query && @blogs.empty? %>
+    <p>No blog titles match “<%= @query %>”.</p>
+  <% end %>
 
-<%= render @blogs %>
+  <nav class="blog-pagination">
+    <%= paginate @blogs %>
+  </nav>
 
-<nav class="blog-pagination">
-  <%= paginate @blogs %>
-</nav>
+  <%= render @blogs %>
+
+  <nav class="blog-pagination">
+    <%= paginate @blogs %>
+  </nav>
+</div>

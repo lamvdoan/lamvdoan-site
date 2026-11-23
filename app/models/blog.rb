@@ -6,6 +6,11 @@ class Blog < ApplicationRecord
 
   paginates_per 5
 
+  def self.matching_title(query)
+    pattern = "%#{sanitize_sql_like(query)}%"
+    where("title ILIKE ?", pattern)
+  end
+
   def self.most_recent
     order("created_at DESC")
   end
