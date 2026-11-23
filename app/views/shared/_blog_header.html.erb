@@ -10,7 +10,7 @@
         <%= form.text_field :q, id: "blog-search-query", value: @query,
             class: "form-control", placeholder: "🔎 Search blog titles",
             inputmode: "search", enterkeyhint: "search", aria: { controls: "blog-search-results" } %>
-        <button type="button" class="btn btn-outline-secondary" data-blog-search-clear>Clear</button>
+        <button type="button" class="btn btn-outline-secondary" aria-label="Clear search" data-blog-search-clear>⌫</button>
       </div>
       <p class="text-danger mb-0" role="status" data-blog-search-status></p>
     <% end %>
