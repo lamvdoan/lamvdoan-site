@@ -20,7 +20,7 @@
   </div>
 
   <div class="mb-3">
-    <%= form.collection_select(:topic_id, Topic.all, :id, :title, class: "form-control") %>
+    <%= form.collection_select(:topic_id, Topic.order(title: :asc), :id, :title, class: "form-control") %>
   </div>
 
   <div class="mb-3">
