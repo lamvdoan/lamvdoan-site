@@ -11,7 +11,10 @@ class BlogsController < ApplicationController
 
   # GET /blogs
   def index
-    @blogs = Blog.most_recent.page(params[:page])
+    query = params[:q]
+    @query = query.strip.presence if query.is_a?(String)
+    blogs = @query ? Blog.matching_title(@query) : Blog.all
+    @blogs = blogs.page(params[:page])
     @title = title_delimiter("Blog")
   end
 
