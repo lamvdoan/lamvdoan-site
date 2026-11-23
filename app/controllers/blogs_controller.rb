@@ -14,7 +14,7 @@ class BlogsController < ApplicationController
     query = params[:q]
     @query = query.strip.presence if query.is_a?(String)
     blogs = @query ? Blog.matching_title(@query) : Blog.all
-    @blogs = blogs.most_recent.page(params[:page])
+    @blogs = blogs.page(params[:page])
     @title = title_delimiter("Blog")
   end
 
