@@ -6,7 +6,12 @@
   <% if controller_path == "blogs" && action_name == "index" %>
     <%= form_with url: blogs_path, method: :get, local: true, data: { blog_search: true }, html: { role: "search", class: "mb-3" } do |form| %>
       <%= form.label :q, "Search blog titles", for: "blog-search-query", class: "visually-hidden" %>
-      <%= form.search_field :q, id: "blog-search-query", value: @query, class: "form-control", placeholder: "🔎 Search blog titles", aria: { controls: "blog-search-results" } %>
+      <div class="input-group">
+        <%= form.text_field :q, id: "blog-search-query", value: @query,
+            class: "form-control", placeholder: "🔎 Search blog titles",
+            inputmode: "search", enterkeyhint: "search", aria: { controls: "blog-search-results" } %>
+        <button type="button" class="btn btn-outline-secondary" data-blog-search-clear>Clear</button>
+      </div>
       <p class="text-danger mb-0" role="status" data-blog-search-status></p>
     <% end %>
   <% end %>
