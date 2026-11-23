@@ -52,6 +52,12 @@ document.addEventListener("turbolinks:load", function () {
   field.addEventListener("input", queueSearch);
   field.addEventListener("compositionend", queueSearch);
 
+  form.querySelector("[data-blog-search-clear]").addEventListener("click", function () {
+    field.value = "";
+    field.focus();
+    field.dispatchEvent(new Event("input"));
+  });
+
   document.addEventListener("turbolinks:before-cache", function () {
     cancelSearch();
     field.value = field.defaultValue;
